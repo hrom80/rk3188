@@ -1,0 +1,15 @@
+on init
+    #export EXTERNAL_STORAGE /mnt/internal_sd
+    #export EXTERNAL_STORAGE_FLASH /mnt/internal_sd
+    #export EMULATED_STORAGE_SOURCE /mnt/internal_sd
+
+    # Enable secondary storage
+    export SECONDARY_STORAGE /storage/internal_sd:/storage/external_sd:/storage/usb_storage
+
+    export EXTERNAL_STORAGE /storage/emulated/legacy
+    export EMULATED_STORAGE_SOURCE /mnt/shell/emulated
+    export EMULATED_STORAGE_TARGET /storage/emulated
+
+    #export EXTERNAL_STORAGE /storage/internal_sd
+    #export EXTERNAL_STORAGE_FLASH /storage/internal_sd
+    #export EMULATED_STORAGE_SOURCE /storage/internal_sd

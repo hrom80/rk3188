@@ -35,6 +35,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/res/images/charger/battery_charge.png:root/res/images/charger/battery_charge.png \
     $(LOCAL_PATH)/ramdisk/res/images/charger/battery_fail.png:root/res/images/charger/battery_fail.png
 
+# Modified shared objects
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/sensors/sensors.rk30board.so:system/lib/hw/sensors.rk30board.so
+
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml \

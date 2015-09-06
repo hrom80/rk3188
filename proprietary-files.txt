@@ -90,7 +90,6 @@ lib/hw/gralloc.rk30board.so
 lib/hw/hwcomposer.rk30board.so
 lib/hw/lights.rk30board.so
 lib/hw/power.rk3188.so
-lib/hw/sensors.rk30board.so
 
 lib/modules/8188eu.ko
 lib/modules/8189es.ko

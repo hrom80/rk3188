@@ -49,8 +49,8 @@ ro.rk.gps=false
 ro.rk.3g=false
 ro.rk.autobrightness=true
 
-ro.sf.hwrotation=270
-ro.sf.touchrotation=-1
+#ro.sf.hwrotation=270
+#ro.sf.touchrotation=-1
 
 ro.hwui.texture_cache_size=72
 ro.hwui.layer_cache_size=48

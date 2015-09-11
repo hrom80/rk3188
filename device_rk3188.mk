@@ -39,6 +39,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/sensors.rk30board.so:system/lib/hw/sensors.rk30board.so
 
+# init.d
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.d/80ipconfig:system/lib/etc/init.d/80ipconfig
+
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml \

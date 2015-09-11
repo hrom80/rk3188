@@ -1,0 +1,6 @@
+#!/system/bin/sh
+# create ipconfig.txt
+
+touch /data/misc/wifi/ipconfig.txt
+chmod 0777 /data/misc/wifi/ipconfig.txt
+

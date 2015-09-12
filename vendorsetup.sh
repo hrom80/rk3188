@@ -1,1 +1,3 @@
+add_lunch_combo cm_rk3188-user
 add_lunch_combo cm_rk3188-userdebug
+add_lunch_combo cm_rk3188-eng

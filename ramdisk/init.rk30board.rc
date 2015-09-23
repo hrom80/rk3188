@@ -9,14 +9,16 @@ on early-init
     export THIRD_VOLUME_STORAGE /storage/usb_storage
 
 on fs
-    insmod /rk30xxnand_ko.ko
+    setprop ro.rk.cpu "rk3188"
+    setprop ro.rk.soc "rk3188"
+    insmod /rk30xxnand_ko.ko.3.0.36+
     mount_all fstab.rk30board
 
 on post-fs
-    insmod /system/lib/modules/ump.ko
-    insmod /system/lib/modules/mali.ko mali_dvfs=50,100,133,160,200,266,400 mali_init_clock=50
-    insmod /system/lib/modules/rk30_mirroring.ko
-    insmod /system/lib/modules/rk29-ipp.ko
+    insmod /system/lib/modules/ump.ko.3.0.36+
+    insmod /system/lib/modules/mali.ko.3.0.36+ mali_dvfs=50,100,133,160,200,266,400 mali_init_clock=50
+    insmod /system/lib/modules/rk30_mirroring.ko.3.0.36+
+    insmod /system/lib/modules/rk29-ipp.ko.3.0.36+
 
 # AP6476 GPS permission
     chmod 755 /system/bin/glgps
@@ -192,7 +194,7 @@ on property:ro.boot.charger.emmc=1
     start charger
 
 on property:ro.boot.charger.emmc=0
-    insmod /rk30xxnand_ko.ko
+    insmod /rk30xxnand_ko.ko.3.0.36+
     mount ext4 mtd@system /system wait ro noatime nodiratime noauto_da_alloc
     start console
     mount ext4 mtd@metadata /metadata wait noatime nodiratime nosuid nodev noauto_da_alloc

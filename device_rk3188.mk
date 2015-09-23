@@ -17,7 +17,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/charger:root/charger \
     $(LOCAL_PATH)/ramdisk/drmboot.ko:root/drmboot.ko \
     $(LOCAL_PATH)/ramdisk/fstab.rk30board:root/fstab.rk30board \
-    $(LOCAL_PATH)/ramdisk/init:root/init \
     $(LOCAL_PATH)/ramdisk/init.rc:root/init.rc \
     $(LOCAL_PATH)/ramdisk/init.rk30board.environment.rc:root/init.rk30board.environment.rc \
     $(LOCAL_PATH)/ramdisk/init.rk30board.rc:root/init.rk30board.rc \

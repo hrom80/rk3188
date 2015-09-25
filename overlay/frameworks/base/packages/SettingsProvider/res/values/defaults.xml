@@ -19,7 +19,7 @@
 <resources>
     <bool name="def_screen_brightness_automatic_mode">true</bool>
     <bool name="def_install_non_market_apps">true</bool>
-    <bool name="assisted_gps_enabled">true</bool>
+    <bool name="assisted_gps_enabled">false</bool>
 
     <!-- Default value for whether or not to pulse the notification LED when there is a
          pending notification -->

@@ -46,7 +46,7 @@
     <storage android:mountPoint="/storage/internal_sd" 
 	android:storageDescription="@string/storage_nand_flash" 
 	android:primary="false"  
-	android:removable="true" 
+	android:removable="false" 
 	android:emulated="false" 
 	android:mtpReserve="100" 
 	android:allowMassStorage="true" />

@@ -62,6 +62,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
+# wifi files
+PRODUCT_PACKAGES += \
+    dhcpcd.conf \
+    hostapd \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
+# bt config files
+PRODUCT_COPY_FILES += \
+    device/haier/rk3188/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf \
+
+# camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera2.portability.force_api=1
+
 $(call inherit-product, build/target/product/full_base.mk)
 
 # This device has enough room for precise davick

@@ -1,20 +1,15 @@
-bin/akmd
-bin/bcm_supplicant
-bin/brcm_patchram_plus
-bin/chrome.sh
-bin/esp_hostapd
-bin/esp_supplicant
-bin/getbootmode.sh
 bin/gsm0710muxd
 bin/gsm0710muxd_c66a
 bin/gsm0710muxd_m51
 bin/gsm0710muxd_mt6250
-bin/hostapd
-bin/packdata
-bin/packdata.sh
+
+bin/akmd
+bin/bcm_supplicant
+bin/brcm_patchram_plus
+bin/esp_hostapd
+bin/esp_supplicant
 bin/rtl_hostapd
 bin/rtl_supplicant
-bin/whtest.sh
 
 etc/alarm_filter.xml
 etc/apns-conf.xml
@@ -128,12 +123,6 @@ lib/librkswscale.so
 lib/librkwmapro.so
 lib/librockchip_update_jni.so
 lib/libapedec.so
-lib/libbluedroid.so
-lib/libbluetooth.so
-lib/libbluetoothd.so
-lib/libbtio.so
-lib/libdocscanner_image-v7a.so
-lib/libdocsimageutils.so
 lib/libhevcdec.so
 lib/libion.so
 lib/libjesancache.so
@@ -142,15 +131,12 @@ lib/libjpeghwdec.so
 lib/libjpeghwenc.so
 lib/liblightcycle.so
 lib/liblinearalloc.so
-lib/libnetjni.so
 lib/libOMX_Core.so
 lib/libomxvpu_dec.so
 lib/libomxvpu_enc.so
 lib/libperformance_runtime.so
 lib/libUMP.so
 lib/libvpu.so
-lib/libwebp_android.so
-lib/libWVphoneAPI.so
 
 
 vendor/firmware/BCM4330B1.hcd
@@ -165,7 +151,6 @@ vendor/firmware/nh660.hcd
 vendor/firmware/rk903.hcd
 vendor/firmware/rk903_26M.hcd
 
-vendor/lib/libbt-vendor.so
 vendor/media/LMspeed_508.emd
 vendor/media/PFFprec_600.emd
 

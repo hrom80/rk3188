@@ -14,9 +14,6 @@ bin/rtl_supplicant
 etc/alarm_filter.xml
 etc/apns-conf.xml
 etc/audio_policy.conf
-etc/media_codecs.xml
-etc/media_profiles.xml
-etc/media_profiles_default.xml
 etc/packages-compat.xml
 etc/packages-composer.xml
 etc/performance_info.xml

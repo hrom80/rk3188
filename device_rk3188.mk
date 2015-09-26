@@ -59,8 +59,28 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
 
+# bt config files
+PRODUCT_COPY_FILES += \
+    device/haier/rk3188/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+
+# media files
+PRODUCT_COPY_FILES += \
+    device/haier/rk3188/media/media_codecs.xml:system/etc/media_codecs.xml \
+    device/haier/rk3188/media/media_profiles.xml:system/etc/media_profiles.xml 
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
+
+# wifi files
+PRODUCT_PACKAGES += \
+    dhcpcd.conf \
+    hostapd \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
+# camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera2.portability.force_api=1
 
 $(call inherit-product, build/target/product/full_base.mk)
 

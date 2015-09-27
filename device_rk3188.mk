@@ -75,12 +75,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
-# wifi files
+# wifi packages
 PRODUCT_PACKAGES += \
     dhcpcd.conf \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf
+
+# audio packages
+PRODUCT_PACKAGES += \
+    audio.usb.default \
+    audio.a2dp.default
 
 # camera
 PRODUCT_PROPERTY_OVERRIDES += \

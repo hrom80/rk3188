@@ -76,7 +76,6 @@ lib/egl/libGLESv2_mali.so
 lib/hw/audio.alsa_usb.rk30board.so
 lib/hw/audio.primary.rk30board.so
 lib/hw/audio_policy.rk30board.so
-lib/hw/camera.rk30board.so
 lib/hw/gpu.rk30board.so
 lib/hw/gralloc.rk30board.so
 lib/hw/hwcomposer.rk30board.so

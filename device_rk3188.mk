@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/haier/rk3188/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
+# camera HAL
+PRODUCT_COPY_FILES += \
+    device/haier/rk3188/camera/camera.rk30board.so:system/lib/hw/camera.rk30board.so
+
 # media files
 PRODUCT_COPY_FILES += \
     device/haier/rk3188/media/media_codecs.xml:system/etc/media_codecs.xml \

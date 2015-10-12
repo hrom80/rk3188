@@ -88,7 +88,8 @@ PRODUCT_PACKAGES += \
 # audio packages
 PRODUCT_PACKAGES += \
     audio.usb.default \
-    audio.a2dp.default
+    audio.a2dp.default \
+    audio.r_submix.default
 
 # camera
 PRODUCT_PROPERTY_OVERRIDES += \

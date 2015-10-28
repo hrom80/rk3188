@@ -11,7 +11,7 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-# Files needed for boot image
+# Files needed for boot and recovery image
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/default.prop:root/default.prop \
     $(LOCAL_PATH)/ramdisk/charger:root/charger \
@@ -32,7 +32,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/res/images/charger/battery_4.png:root/res/images/charger/battery_4.png \
     $(LOCAL_PATH)/ramdisk/res/images/charger/battery_5.png:root/res/images/charger/battery_5.png \
     $(LOCAL_PATH)/ramdisk/res/images/charger/battery_charge.png:root/res/images/charger/battery_charge.png \
-    $(LOCAL_PATH)/ramdisk/res/images/charger/battery_fail.png:root/res/images/charger/battery_fail.png
+    $(LOCAL_PATH)/ramdisk/res/images/charger/battery_fail.png:root/res/images/charger/battery_fail.png \
+    $(LOCAL_PATH)/recovery/init.recovery.rk30board.rc:root/init.recovery.rk30board.rc 
 
 # Modified shared objects
 PRODUCT_COPY_FILES += \

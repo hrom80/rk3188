@@ -4,7 +4,7 @@ USE_CAMERA_STUB := false
 -include vendor/haier/rk3188/BoardConfigVendor.mk
 
 TARGET_NO_RADIOIMAGE := true
-TARGET_NO_KERNEL := true
+#TARGET_NO_KERNEL := true
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -92,4 +92,12 @@ WIFI_DRIVER_FW_PATH_AP      := "/system/etc/firmware/fw_bcm4330_apsta.bin"
 BOARD_USE_SKIA_LCDTEXT := true
 BOARD_NO_ALLOW_DEQUEUE_CURRENT_BUFFER := true
 BUILD_WITHOUT_BATTERY := false
+
+#TWRP
+TARGET_RECOVERY_FSTAB := device/haier/rk3188/recovery/recovery.fstab
+DEVICE_RESOLUTION := 1920x1200
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+TW_NO_SCREEN_BLANK := true
+TW_NO_SCREEN_TIMEOUT := true
+TW_DISABLE_DOUBLE_BUFFERING := true
 

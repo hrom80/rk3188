@@ -79,7 +79,6 @@ lib/hw/audio_policy.rk30board.so
 lib/hw/gpu.rk30board.so
 lib/hw/gralloc.rk30board.so
 lib/hw/hwcomposer.rk30board.so
-lib/hw/lights.rk30board.so
 lib/hw/power.rk3188.so
 
 lib/modules/8188eu.ko

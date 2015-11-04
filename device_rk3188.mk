@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/haier/rk3188/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
+# lights HAL
+PRODUCT_PACKAGES += \
+    lights.rk30board
+
 # media files
 PRODUCT_COPY_FILES += \
     device/haier/rk3188/media/media_codecs.xml:system/etc/media_codecs.xml \

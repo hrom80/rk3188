@@ -4,7 +4,6 @@ USE_CAMERA_STUB := false
 -include vendor/haier/rk3188/BoardConfigVendor.mk
 
 TARGET_NO_RADIOIMAGE := true
-#TARGET_NO_KERNEL := true
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -23,6 +22,8 @@ ARCH_ARM_HAVE_ARMV7A := true
 
 TARGET_BOOTLOADER_BOARD_NAME := rk3188
 
+BOARD_CUSTOM_BOOTIMG_MK := device/haier/rk3188/bootimg.mk
+
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432
@@ -33,6 +34,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
 TARGET_KERNEL_CONFIG := haier_1043_defconfig
+TARGET_USES_UNCOMPRESSED_KERNEL := true
 
 TARGET_PREBUILT_KERNEL := device/haier/rk3188/kernel
 

@@ -65,6 +65,7 @@ BOARD_EGL_CFG := vendor/haier/rk3188/proprietary/lib/egl/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_HAVE_PIXEL_FORMAT_INFO := true
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
+BOARD_EGL_NEEDS_FNW := true
 
 #Touch screen
 BOARD_USE_LEGACY_TOUCHSCREEN := true
